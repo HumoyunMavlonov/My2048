@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund_blurred"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#57000000">
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/home"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:lottie_rawRes="@raw/animation_lmxkqavw"
+        android:elevation="10dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt2048"
+        android:layout_width="wrap_content"
+        android:text="2048"
+        android:fontFamily="@font/jarsey"
+        android:textSize="100sp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/doc_txt2048"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="2048"
+        android:fontFamily="@font/jarsey"
+        android:textSize="150sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/support"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:lottie_rawRes="@raw/animation_lmxkxby4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doc_txts" />
+
+    <TextView
+        android:id="@+id/doc_txts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chrusty"
+        android:padding="20dp"
+        android:text="2048 is a deceptively simple yet incredibly challenging game that tests your strategic thinking and puzzle-solving skills. The objective is to merge numbered tiles on a 4x4 grid to reach the elusive 2048 tile. Sounds easy, right? Think again!
+
+How to Play:
+
+Swipe in any direction (up, down, left, or right) to move all tiles on the grid.
+Tiles with the same number will merge into a single tile with a higher number.
+The goal is to create a tile with the number 2048, but don't stop there! Keep playing to achieve higher scores.
+Features:
+
+Addictive Gameplay: 2048 is easy to learn but difficult to master. Can you conquer the board and reach 2048?
+Beautiful Design: Enjoy a clean and visually appealing interface that enhances your gaming experience.
+Leaderboards: Compete with players from around the world and see how your skills stack up.
+Achievements: Unlock achievements as you progress, adding an extra layer of challenge.
+Endless Fun: The game continues even after reaching 2048. Keep going to set new records and beat your own high score!"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doc_txt2048"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:foreground="?actionBarItemBackground"
+        android:paddingHorizontal="60dp"
+        android:src="@drawable/continue_button"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt2048" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/newgame_btn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        app:lottie_loop="true"
+        android:paddingHorizontal="60dp"
+        app:lottie_rawRes="@raw/animation_lmxizh0s"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continue_btn"
+        app:lottie_autoPlay="true"
+        tools:ignore="MissingClass"/>
+        <TextView
+            android:id="@+id/game_btnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="25sp"
+            android:fontFamily="@font/jarsey"
+            app:layout_constraintTop_toTopOf="@id/newgame_btn"
+            app:layout_constraintBottom_toBottomOf="@id/newgame_btn"
+            app:layout_constraintLeft_toLeftOf="@id/newgame_btn"
+            app:layout_constraintRight_toRightOf="@id/newgame_btn"
+            android:textColor="@color/white"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/how_to_play"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        app:lottie_loop="true"
+        android:paddingHorizontal="60dp"
+        app:lottie_rawRes="@raw/animation_lmxizh0s"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newgame_btn"
+        app:lottie_autoPlay="true"
+        tools:ignore="MissingClass" />
+        <TextView
+            android:id="@+id/aboutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="25sp"
+            android:fontFamily="@font/jarsey"
+            app:layout_constraintTop_toTopOf="@id/how_to_play"
+            app:layout_constraintBottom_toBottomOf="@id/how_to_play"
+            app:layout_constraintLeft_toLeftOf="@id/how_to_play"
+            app:layout_constraintRight_toRightOf="@id/how_to_play"
+            android:textColor="@color/white"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/exit_game"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            app:lottie_loop="true"
+            android:paddingHorizontal="60dp"
+            app:lottie_rawRes="@raw/animation_lmxizh0s"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/how_to_play"
+            app:lottie_autoPlay="true"
+            tools:ignore="MissingClass" />
+        <TextView
+            android:id="@+id/exit_game_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textSize="25sp"
+            android:fontFamily="@font/jarsey"
+            app:layout_constraintTop_toTopOf="@id/exit_game"
+            app:layout_constraintBottom_toBottomOf="@id/exit_game"
+            app:layout_constraintLeft_toLeftOf="@id/exit_game"
+            app:layout_constraintRight_toRightOf="@id/exit_game"
+            android:textColor="@color/white"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
